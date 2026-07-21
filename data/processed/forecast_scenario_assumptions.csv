@@ -1,0 +1,7 @@
+dimension,scenario,annual_growth_pp,annual_uncertainty_sd
+Access,Conservative,0.88,0.6
+Access,Baseline,1.5447404993853417,0.8
+Access,Optimistic,2.2353846153846155,1.1
+Usage,Conservative,0.5,0.9
+Usage,Baseline,1.7494264246713267,1.2
+Usage,Optimistic,3.0,1.6
