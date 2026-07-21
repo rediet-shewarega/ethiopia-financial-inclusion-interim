@@ -1,0 +1,54 @@
+{
+  "model_name": "Standardized event-indicator association model",
+  "score_interpretation": {
+    "positive": "Expected increase or supportive effect",
+    "negative": "Expected decrease or constraining effect",
+    "zero": "Mixed, neutral, or currently unclear effect"
+  },
+  "direction_map": {
+    "increase": 1.0,
+    "positive": 1.0,
+    "decrease": -1.0,
+    "negative": -1.0,
+    "stabilize": 0.5,
+    "stabilise": 0.5,
+    "mixed": 0.0,
+    "neutral": 0.0,
+    "unclear": 0.0,
+    "": 0.0
+  },
+  "magnitude_map": {
+    "high": 3.0,
+    "medium": 2.0,
+    "moderate": 2.0,
+    "low": 1.0,
+    "negligible": 0.25,
+    "": 1.0
+  },
+  "evidence_weight_map": {
+    "empirical": 1.0,
+    "literature": 0.85,
+    "theoretical": 0.65,
+    "expert": 0.6,
+    "": 0.5
+  },
+  "confidence_weight_map": {
+    "high": 1.0,
+    "medium": 0.75,
+    "low": 0.5,
+    "": 0.5
+  },
+  "temporal_response": {
+    "functional_form": "effect * (1 - exp(-months_after_event / lag_months))",
+    "pre_event_effect": 0,
+    "combination_rule": "Effects from multiple links are additive",
+    "forecast_horizon_months": 36
+  },
+  "limitations": [
+    "Association scores are relative strengths and are not direct percentage-point estimates.",
+    "Sparse observations prevent reliable causal estimation.",
+    "Multiple events may overlap during the same period.",
+    "Administrative registrations are not equivalent to unique active adult users.",
+    "Evidence quality and confidence assessments are partly judgment-based."
+  ]
+}
