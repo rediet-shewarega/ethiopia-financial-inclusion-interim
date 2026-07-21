@@ -4,7 +4,11 @@ This project analyzes Ethiopia's financial inclusion transformation, focusing on
 
 - Access: account ownership
 - Usage: digital-payment adoption
+## Live Dashboard
 
+Explore the deployed interactive dashboard:
+
+https://ethiopia-fi-rediet.streamlit.app
 ## Interim Submission
 
 The interim submission contains:
