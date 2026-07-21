@@ -1,0 +1,60 @@
+{
+  "model_name": "Scenario-based Access and Usage forecast model",
+  "forecast_period": [
+    2025,
+    2026,
+    2027
+  ],
+  "access": {
+    "baseline_year": 2024,
+    "baseline_percent": 49.0,
+    "historical_observations": 5,
+    "recent_growth_pp_per_year": 1.0,
+    "long_run_growth_pp_per_year": 2.6923076923076925,
+    "blended_trend_pp_per_year": 1.5076923076923077,
+    "event_signal": 0.10585197626581183,
+    "scenario_growth_rates": {
+      "Conservative": 0.88,
+      "Baseline": 1.5447404993853417,
+      "Optimistic": 2.2353846153846155
+    },
+    "scenario_uncertainty_sd": {
+      "Conservative": 0.6,
+      "Baseline": 0.8,
+      "Optimistic": 1.1
+    }
+  },
+  "usage": {
+    "baseline_year": 2024,
+    "baseline_percent": 66.0,
+    "historical_observations": 1,
+    "event_signal": 0.4988528493426536,
+    "scenario_growth_rates": {
+      "Conservative": 0.5,
+      "Baseline": 1.7494264246713267,
+      "Optimistic": 3.0
+    },
+    "scenario_uncertainty_sd": {
+      "Conservative": 0.9,
+      "Baseline": 1.2,
+      "Optimistic": 1.6
+    }
+  },
+  "simulation": {
+    "simulations_per_scenario": 10000,
+    "interval": "90 percent",
+    "lower_percentile": 5,
+    "upper_percentile": 95,
+    "forecast_bounds": [
+      0,
+      100
+    ]
+  },
+  "limitations": [
+    "Access contains only five national survey observations.",
+    "Usage contains only one comparable percentage-based observation.",
+    "Usage projections are scenario assumptions, not fitted time-series forecasts.",
+    "Event-impact scores are relative association signals rather than causal estimates.",
+    "Forecast intervals represent model uncertainty and do not capture every structural risk."
+  ]
+}
